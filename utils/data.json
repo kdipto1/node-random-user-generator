@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Maldonado Sutton",
     "gender": "male",
-    "address": "Canada",
+    "address": "Canada/Usa",
     "contact": 8956445641,
     "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
   },
@@ -11,7 +11,7 @@
     "id": 1,
     "name": "Dipto Roy",
     "gender": "male",
-    "address": "Canada",
+    "address": "Canada/Usa",
     "contact": 8956445641,
     "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
   },
@@ -44,14 +44,6 @@
     "name": "Wade Pickett",
     "gender": "female",
     "address": "Belmont, Bermuda",
-    "contact": 8956445641,
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "id": 7,
-    "name": "Rodriquez Mcdowell",
-    "gender": "female",
-    "address": "Ladera, Martinique",
     "contact": 8956445641,
     "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
   },

@@ -84,31 +84,34 @@ module.exports.updateAUser = (req, res, next) => {
 module.exports.updateBulkUser = (req, res, next) => {
   const userIdsToUpdate = req.body.ids;
   const newDetails = req.body.details;
-  console.log(newDetails);
-  const updatedData = data.map((user) => {
-    if (userIdsToUpdate.includes(user.id)) {
-      return { ...user, ...newDetails };
-    }
-    return user;
-  });
-  fs.writeFile(filePath, JSON.stringify(updatedData), (err) => {
-    if (err) {
-      throw err;
-    }
-    res.status(200).send({
-      success: true,
-      message: "Updated Users Data Successfully",
+  if (newDetails) {
+    const updatedData = data.map((user) => {
+      if (userIdsToUpdate.includes(user.id)) {
+        return { ...user, ...newDetails };
+      }
+      return user;
     });
+    fs.writeFile(filePath, JSON.stringify(updatedData), (err) => {
+      if (err) {
+        throw err;
+      }
+      res.status(200).send({
+        success: true,
+        message: "Updated Users Data Successfully",
+      });
+    });
+  } else {
     res.status(404).send({
       success: false,
-      message: "Users not available",
+      message: "Users not available or data was not given",
     });
-  });
+  }
 };
 
 module.exports.deleteAUser = (req, res, next) => {
   const id = req.params.id;
-  if (id) {
+  const user = data.find((user) => user.id === Number(id));
+  if (user) {
     const newData = data.filter((user) => user.id !== Number(id));
     fs.writeFile(filePath, JSON.stringify(newData), (err) => {
       if (err) {
