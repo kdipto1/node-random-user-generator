@@ -1,10 +1,16 @@
 const filePath = process.cwd() + "/utils/data.json";
-const data = require("../utils/data.json");
+// const data = require("../utils/data.json");
+// import  data from "../utils/data.json";
+const JSONdb = require("simple-json-db");
+const dataS = new JSONdb(filePath);
 const fs = require("fs");
+const data = dataS.storage;
+//
 
-module.exports.getRandomUser = (req, res, next) => {
-  const randomIndex = Math.floor(Math.random() * data.length);
-  const randomUser = data[randomIndex];
+module.exports.getRandomUser = async (req, res, next) => {
+  const randomIndex = await Math.floor(Math.random() * data.length);
+  const randomUser = await data[randomIndex];
+  // console.log(data);
   res.json(randomUser);
 };
 
@@ -83,7 +89,7 @@ module.exports.updateBulkUser = (req, res, next) => {
 };
 
 module.exports.deleteAUser = (req, res, next) => {
-  const id = req.query.id;
+  const id = req.params.id;
   if (id) {
     const newData = data.filter((user) => user.id !== Number(id));
     fs.writeFile(filePath, JSON.stringify(newData), (err) => {
