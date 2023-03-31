@@ -22,19 +22,16 @@ module.exports.saveAUser = (req, res, next) => {
   const newUser = req.body;
   const { gender, name, contact, address, photoUrl } = newUser;
   if (gender && name && contact && address && photoUrl) {
-    // const newUserId = data.length;
     const availableIds = data.map((user) => user.id);
     let newUserId;
     do {
       newUserId = Math.floor(Math.random() * data.length + 1);
     } while (availableIds.includes(newUserId));
-    // console.log(availableIds,newUserId);
     const newUserWithId = {
       id: newUserId,
       ...newUser,
     };
     const newData = [...data, newUserWithId];
-    // console.log(newData);
     fs.writeFile(filePath, JSON.stringify(newData), (err) => {
       if (err) {
         throw err;
@@ -72,7 +69,7 @@ module.exports.updateBulkUser = (req, res, next) => {
 };
 
 module.exports.deleteAUser = (req, res, next) => {
-  const id = req.params.id;
+  const id = req.query.id;
   if (id) {
     const newData = data.filter((user) => user.id !== Number(id));
     fs.writeFile(filePath, JSON.stringify(newData), (err) => {

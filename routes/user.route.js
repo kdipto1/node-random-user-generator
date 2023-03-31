@@ -7,6 +7,6 @@ router.route("/all").get(userController.getAllUsers);
 router.route("/save").post(userController.saveAUser);
 router.route("/update").patch(userController.updateAUser);
 router.route("/bulk-update").patch(userController.updateBulkUser);
-router.route("/delete/:id").delete(userController.deleteAUser);
+router.route("/delete").delete(userController.deleteAUser);
 
 module.exports = router;
