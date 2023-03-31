@@ -23,13 +23,18 @@ module.exports.saveAUser = (req, res, next) => {
   const { gender, name, contact, address, photoUrl } = newUser;
   if (gender && name && contact && address && photoUrl) {
     // const newUserId = data.length;
-    
+    const availableIds = data.map((user) => user.id);
+    let newUserId;
+    do {
+      newUserId = Math.floor(Math.random() * data.length + 1);
+    } while (availableIds.includes(newUserId));
+    // console.log(availableIds,newUserId);
     const newUserWithId = {
       id: newUserId,
       ...newUser,
     };
     const newData = [...data, newUserWithId];
-    console.log(newData);
+    // console.log(newData);
     fs.writeFile(filePath, JSON.stringify(newData), (err) => {
       if (err) {
         throw err;
@@ -48,7 +53,7 @@ module.exports.updateAUser = (req, res, next) => {
       if (user.id === Number(id)) {
         return {
           ...user,
-          ...properties
+          ...properties,
         };
       }
       return user;
