@@ -65,7 +65,21 @@ module.exports.updateAUser = (req, res, next) => {
 };
 
 module.exports.updateBulkUser = (req, res, next) => {
-  res.send("update bulk user");
+  const userIdsToUpdate = req.body.userIds;
+  const newDetails = req.body.newDetails;
+  console.log(newDetails);
+  const updatedData = data.map((user) => {
+    if (userIdsToUpdate.includes(user.id)) {
+      return { ...user, ...newDetails };
+    }
+    return user;
+  });
+  fs.writeFile(filePath, JSON.stringify(updatedData), (err) => {
+    if (err) {
+      throw err;
+    }
+    res.send("update a user");
+  });
 };
 
 module.exports.deleteAUser = (req, res, next) => {
