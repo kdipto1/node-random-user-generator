@@ -1,10 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-// import express from "express";
-// import cors from "cors";
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 const app = express();
-// import userRoutes from "./routes/user.route.js";
 
 const userRoutes = require("./routes/user.route.js");
 
@@ -24,5 +21,3 @@ app.all("*", (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`);
 });
-
-module.exports = app;

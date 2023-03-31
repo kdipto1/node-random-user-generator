@@ -1,17 +1,25 @@
 [
   {
-    "id": 2,
-    "name": "Jack Sparrow",
+    "id": 0,
+    "name": "Maldonado Sutton",
     "gender": "male",
     "address": "Summertown, United Kingdom",
     "contact": 8956445641,
     "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
   },
   {
-    "id": 3,
-    "name": "Jack Sparrow",
+    "id": 1,
+    "name": "Dipto Roy",
     "gender": "male",
-    "address": "Summertown, United Kingdom",
+    "address": "Grapeview, Burkina Faso",
+    "contact": 8956445641,
+    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 3,
+    "name": "Socorro Saunders",
+    "gender": "female",
+    "address": "Helen, Tuvalu",
     "contact": 8956445641,
     "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
   },
@@ -20,6 +28,14 @@
     "name": "Barbara Kirkland",
     "gender": "female",
     "address": "Witmer, Denmark",
+    "contact": 8956445641,
+    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+  },
+  {
+    "id": 5,
+    "name": "Gina Banks",
+    "gender": "male",
+    "address": "Fontanelle, Palau",
     "contact": 8956445641,
     "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
   },
@@ -60,78 +76,6 @@
     "name": "Smith Sanders",
     "gender": "male",
     "address": "Elliott, Spain",
-    "contact": 8956445641,
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "gender": "male",
-    "name": "Dipto",
-    "contact": 8956445641,
-    "address": "Summertown, United Kingdom",
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    "id": 11
-  },
-  {
-    "id": 13,
-    "gender": "male",
-    "name": "Dipto",
-    "contact": 8956445641,
-    "address": "Summertown, United Kingdom",
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "id": 12,
-    "name": "Socorro Saunders",
-    "gender": "female",
-    "address": "Helen, Tuvalu",
-    "contact": 8956445641,
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "id": 5,
-    "name": "Socorro Saunders",
-    "gender": "female",
-    "address": "Helen, Tuvalu",
-    "contact": 8956445641,
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "id": 14,
-    "name": "lara Saunders",
-    "gender": "female",
-    "address": "Helen, Tuvalu",
-    "contact": 8956445641,
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "id": 15,
-    "name": "sara Saunder 15",
-    "gender": "female",
-    "address": "Helen, Tuvalu",
-    "contact": 8956445641,
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "id": 17,
-    "name": "sara Saunder 16",
-    "gender": "female",
-    "address": "Helen, Tuvalu",
-    "contact": 8956445641,
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "id": 1,
-    "name": "sara sundar",
-    "gender": "female",
-    "address": "Helen, Tuvalu",
-    "contact": 8956445641,
-    "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  },
-  {
-    "id": 16,
-    "name": "sara sundar test",
-    "gender": "female",
-    "address": "Helen, Tuvalu",
     "contact": 8956445641,
     "photoUrl": "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVyc29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
   }

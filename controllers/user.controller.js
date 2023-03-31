@@ -1,21 +1,10 @@
 const filePath = process.cwd() + "/utils/data.json";
 const data = require("../utils/data.json");
-// import  data from "../utils/data.json";
-// const JSONdb = require("simple-json-db");
-// const dataS = new JSONdb(filePath);
 const fs = require("fs");
-// const data = dataS.storage;
-//
-// const StormDB = require("stormdb");
-// const engine = new StormDB.localFileEngine(filePath);
-// const db = new StormDB(engine);
-// const data = db.state;
-//
 
 module.exports.getRandomUser = (req, res, next) => {
   const randomIndex = Math.floor(Math.random() * data.length);
   const randomUser = data[randomIndex];
-  // console.log(data);
   res.json(randomUser);
 };
 
@@ -54,7 +43,7 @@ module.exports.saveAUser = (req, res, next) => {
 };
 
 module.exports.updateAUser = (req, res, next) => {
-  const id = req.query.id;
+  const id = req.params.id;
   const properties = req.body;
   const user = data.find((user) => user.id === Number(id));
   if (user) {
@@ -77,8 +66,8 @@ module.exports.updateAUser = (req, res, next) => {
 };
 
 module.exports.updateBulkUser = (req, res, next) => {
-  const userIdsToUpdate = req.body.userIds;
-  const newDetails = req.body.newDetails;
+  const userIdsToUpdate = req.body.ids;
+  const newDetails = req.body.details;
   console.log(newDetails);
   const updatedData = data.map((user) => {
     if (userIdsToUpdate.includes(user.id)) {
