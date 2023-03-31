@@ -37,7 +37,15 @@ module.exports.saveAUser = (req, res, next) => {
       if (err) {
         throw err;
       }
-      res.send("save a user");
+      res.status(200).send({
+        success: true,
+        message: "User created successfully",
+      });
+    });
+  } else {
+    res.status(204).send({
+      success: false,
+      message: "Please provide all details of user",
     });
   }
 };
@@ -60,7 +68,15 @@ module.exports.updateAUser = (req, res, next) => {
       if (err) {
         throw err;
       }
-      res.send("update a user");
+      res.status(200).send({
+        success: true,
+        message: "Updated data successfully",
+      });
+    });
+  } else {
+    res.status(404).send({
+      success: false,
+      message: "User not found",
     });
   }
 };
@@ -79,7 +95,14 @@ module.exports.updateBulkUser = (req, res, next) => {
     if (err) {
       throw err;
     }
-    res.send("update a user");
+    res.status(200).send({
+      success: true,
+      message: "Updated Users Data Successfully",
+    });
+    res.status(404).send({
+      success: false,
+      message: "Users not available",
+    });
   });
 };
 
@@ -91,7 +114,15 @@ module.exports.deleteAUser = (req, res, next) => {
       if (err) {
         throw err;
       }
-      res.send("delete a user");
+      res.status(200).send({
+        success: true,
+        message: "User has been deleted",
+      });
+    });
+  } else {
+    res.status(404).send({
+      success: false,
+      message: "User is not found",
     });
   }
 };
